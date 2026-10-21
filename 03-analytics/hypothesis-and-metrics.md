@@ -1,17 +1,32 @@
-# Hypothesis & Success Metrics
+# Hypothesis & Success Metrics (Module 3)
 
-> **Module 3 · ★ Deliverable 3.** Repo file `03-analytics/hypothesis-and-metrics.md` — part of your submission.
-> Do the lab in the **Module 3 · Exercise Guide** (linked from the Module 3 deck), then click **⬇ Download .md** — it saves as this exact file. Commit it here.
-> It feeds the **Problem, Value & Hypothesis** slide of your Module 6 final deck.
+## Pre-work · Hypothesis check
+- **Role , who you are solving for (from M2):** The Overwhelmed Viewer
+- **Goal , what this user is ultimately trying to achieve:** Trying to spend less time and get high quality content in limited time which matches the interest. Try not to make the user spend more time in searching rather than watching the content
+- **Friction / moment of misery , the specific pain blocking their goal:** User spends most time scrolling through titles and does not find anything that is appealing. Then user ends up closing the app without watching anything.
+- **Current workaround , the external tool or manual process they rely on (M2):** The user opens the app with a goal of watching something specific to their mood. They scroll the home rows, finding mostly loud, new releases with no mood or occasion filter. They try search, but typing a descriptive query (“slow quiet French drama”) returns irrelevant results. After 15 to 20 minutes with no decision, they leave. They switch to an external alternative: a DVD, YouTube, or a competitor’s curated email (two hand-picked films a week).
+- **Problem Hook , your one-sentence framing of the business crisis (M1):** Solve the issue of showing Quality vs Quantity in terms of content for each users based on different factors like viewing history, likes, dislikes, rather than just bombarding tones of suggestions that might not be relevant to the viewer's interest.
+- **Value Proposition , the outcome your initiative promised to deliver (M1):** Focus on more user specific content and suggestions with lower price for trial period or free trials to win viewership back and give them an incentive. It is urgent as the platform can lose customers due to bad user experience, negative word of mouth, etc.
 
-## Finalized product hypothesis
+## Read your data snapshots
+- **Does the funnel data confirm your M2 friction point, or does it tell a different story? Note where the numbers align with the qualitative pain you found and where they diverge.:** Yes. Numbers align where only 29% of homepage visitors start playing, and content searched then played fell from 41% to 34%.
+Numbers diverge where after playback starts and many do not reach 30 minutes. Average session length also fell from 31 to 24 minutes
+- **Do the retention patterns align with the workaround your M2 persona used to find content? Note what the Mo. 0→1 drop suggests about the onboarding experience your persona described as frustrating.:** Yes.
+- **Does the LTV gap and the content mix (61% trending for Wanderers) confirm the moment of misery your persona described? Note which segment your persona is in and whether the data confirms their pain.:** Yes. 
+Spend less time and get high-quality content that matches their interests in limited time, without spending more time searching than watching.
+- **Does the low adoption confirm your persona is burdened by tools they don’t use? Note whether the low scheduling adoption (42%) for coordinators matches your M2 moment of misery.:** _(not filled in)_
+- **Does the workflow data match the manual process or hack you documented in M2? Note whether the specific drop-offs or time gaps explain why your persona avoids the digital tool.:** _(not filled in)_
+- **Look at the CSAT heatmap. Which specific cell most directly maps to your persona’s friction? Note how the NPS trend justifies the urgency of your M1 Problem Hook.:** _(not filled in)_
 
-> Based on [qual + quant evidence], I believe that [solving X] for [persona] will result in [outcome], as measured by a [X%] change in [success metric]. I will protect [guardrail metric] and make a go/no-go decision after [decision window].
+## Step 3 · Craft your hypothesis
+- **Qualitative evidence (from M2) , quote the specific friction / moment of misery for your persona:** User spends most time scrolling through titles and does not find anything that is appealing. Then user ends up closing the app without watching anything.
+- **Quantitative evidence (from M3) , name the metric or data point that confirms the pain; cite the number:** Only 29% of homepage visitors start playing, and search-to-play conversion fell from 41% to 34%, supporting discovery friction. Wanderers represent 41% of the base, average only 1.1 sessions per week, and show 22 percentage points lower churn when Spotlight-exposed. Spotlight cohorts also retain 74–79% at Month 1, versus 63–68% for Full Library cohorts. These patterns support testing focused discovery; they do not establish causation
+- **Persona , role, goal, and the friction you confirmed in the reconciliation steps:** The Overwhelmed Viewer, a time-constrained subscriber in the Wanderers segment, wants to find quality content matching their interests quickly. They struggle to choose from too many titles and leave without finding something appealing
+- **Problem you are solving , one sentence describing the specific friction this initiative removes:** Reduce the effort and uncertainty of choosing what to watch by offering a small, personalized Spotlight selection during onboarding and return visits.
+- **Strategic outcome , what behaviour change do you expect, and how does it map to retention / revenue / churn?:** Help Wanderers find and start relevant content faster and return more often, improving Month 1 retention, reducing churn, and increasing subscriber lifetime value and retained revenue.
+- **Primary success metric (initiative signal) , the leading indicator that tells you the gap is closing:** Homepage-to-play conversion among Wanderers: the percentage of Wanderers who start content after visiting the homepage. A proposed target is a 10% relative improvement versus a control group. This directly signals that fewer users leave without finding something to watch
+- **Guardrail metric (product signal) , the metric that must NOT drop; it protects your existing base:** Month 1 subscriber retention for Casual Browsers and Power Users must not decline. Set a proposed tolerance of no more than a 2-percentage-point decrease versus control to protect the existing base
+- **Decision window , how much time or data before you scale, pivot, or kill? minimum threshold to proceed?:** Run a randomized test for 6–8 weeks, allowing at least one full month of retention follow-up. Calculate the required sample size using Wanderers’ baseline conversion before launch. Scale if conversion improves by at least 10% relatively, the improvement is statistically significant at 95% confidence, and the retention guardrail passes
+- **Draft your full hypothesis sentence , one to three sentences; quote the metric, name the persona, name the outcome:** Based on our Overwhelmed Viewer’s frustration—“closing the app without watching anything”—and the decline in search-to-play conversion from 41% to 34%, I believe that reducing choice overload through a small, personalized Spotlight selection for Wanderers will help them find appealing content faster and improve retention, as measured by a 10% relative increase in homepage-to-play conversion versus control.
 
-## Success metrics
-
-| Metric | Type | Target | Why it matters |
-|---|---|---|---|
-| _North-star_ | | _____ | _____ |
-| _Leading indicator_ | | _____ | _____ |
-| _Guardrail_ | | _____ | _____ |
+I will protect Month 1 retention for Casual Browsers and Power Users, allowing no more than a 2-percentage-point decline versus control, and make a go/no-go decision after 6–8 weeks, provided the test reaches the required sample size and includes a full month of retention follow-up.
